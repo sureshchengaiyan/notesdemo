@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Course Notes - 5 Units</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f3f4f6;
+    }
+    .app {
+      max-width: 480px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      text-align: center;
+      padding: 12px;
+      background: #1e3a8a;
+      color: #ffffff;
+    }
+    .banner {
+      width: 100%;
+      max-height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 8px 0;
+    }
+    .college-name {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 4px 0;
+    }
+    .course-name {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+    main {
+      padding: 12px;
+      flex: 1;
+    }
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .units-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .unit-card {
+      background: #f9fafb;
+      border-radius: 10px;
+      padding: 10px;
+      border: 1px solid #e5e7eb;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .unit-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .unit-desc {
+      font-size: 0.8rem;
+      color: #4b5563;
+      margin-bottom: 8px;
+    }
+    .btn {
+      display: inline-block;
+      text-align: center;
+      padding: 8px;
+      font-size: 0.85rem;
+      border-radius: 8px;
+      border: none;
+      background: #2563eb;
+      color: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .btn:active {
+      opacity: 0.8;
+    }
+    footer {
+      font-size: 0.75rem;
+      text-align: center;
+      padding: 8px 10px;
+      color: #6b7280;
+      border-top: 1px solid #e5e7eb;
+      background: #f9fafb;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <!-- DASHBOARD HEADER -->
+    <header>
+      <!-- College banner (replace banner.jpg with your own) -->
+      <img src="assets/banner.jpg" alt="College Banner" class="banner" />
+      <div class="college-name">AGNI COLLEGE OF TECHNOLOGY</div>
+      <div class="course-name">B.E CSE - Subject: Computer Networks</div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <div class="section-title">Unit-wise Notes</div>
+      <div class="units-grid">
+        <!-- Unit 1 -->
+        <div class="unit-card">
+          <div>
+            <div class="unit-title">Unit 1 - Basics</div>
+            <div class="unit-desc">Introduction & fundamentals.</div>
+          </div>
+          <a class="btn" href="notes/unit1.pdf" target="_blank">
+            Open Unit 1 PDF
+          </a>
+        </div>
+
+        <!-- Unit 2 -->
+        <div class="unit-card">
+          <div>
+            <div class="unit-title">Unit 2 - Concepts</div>
+            <div class="unit-desc">Core concepts and theory.</div>
+          </div>
+          <a class="btn" href="notes/unit2.pdf" target="_blank">
+            Open Unit 2 PDF
+          </a>
+        </div>
+
+        <!-- Unit 3 -->
+        <div class="unit-card">
+          <div>
+            <div class="unit-title">Unit 3 - Advanced Topics</div>
+            <div class="unit-desc">Detailed explanations & examples.</div>
+          </div>
+          <a class="btn" href="notes/unit3.pdf" target="_blank">
+            Open Unit 3 PDF
+          </a>
+        </div>
+
+        <!-- Unit 4 -->
+        <div class="unit-card">
+          <div>
+            <div class="unit-title">Unit 4 - Applications</div>
+            <div class="unit-desc">Real-time applications.</div>
+          </div>
+          <a class="btn" href="notes/unit4.pdf" target="_blank">
+            Open Unit 4 PDF
+          </a>
+        </div>
+
+        <!-- Unit 5 -->
+        <div class="unit-card">
+          <div>
+            <div class="unit-title">Unit 5 - Recent Trends</div>
+            <div class="unit-desc">Latest trends & case studies.</div>
+          </div>
+          <a class="btn" href="notes/unit5.pdf" target="_blank">
+            Open Unit 5 PDF
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      Designed for students by Faculty – Access notes anytime, anywhere.
+    </footer>
+  </div>
+</body>
+</html>
